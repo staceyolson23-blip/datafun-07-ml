@@ -1,8 +1,6 @@
 # datafun-07-ml
 **Author:** Stacey Olson  
 **Date:** October 2025  
-**Course:** Introduction to Machine Learning  
-**Instructor:** Dr. Denise Case  
 **Repository:** [datafun-07-ml](https://github.com/staceyolson23-blip/datafun-07-ml)
 
 ---
