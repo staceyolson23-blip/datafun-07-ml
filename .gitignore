@@ -1,0 +1,25 @@
+# venvs
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS & editor
+.DS_Store
+.vscode/
+
+# Env files / secrets
+.env
+*.env
+
+# Data dumps (keep small CSVs tracked; ignore big/intermediate outputs)
+data/*.parquet
+data/*.feather
+data/*.arrow
+data/*.pq
