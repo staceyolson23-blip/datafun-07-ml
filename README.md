@@ -133,3 +133,74 @@ This project demonstrates your ability to:
 ## 🗒️ Notes
 Keep a log of key commands used and any troubleshooting steps.
 Record additional dependencies if you install new packages.
+---
+---
+# Chapter 10: Object-Oriented Programming Examples
+
+These files come from **Deitel & Deitel’s _Intro to Python_** textbook (Chapter 10)  
+and demonstrate **core Object-Oriented Programming (OOP) concepts** in Python.
+
+---
+
+## 📁 Files Overview
+
+### `complexnumber.py`
+- **Purpose:** Demonstrates how to define a class with attributes and **operator overloading**.
+- **Key Concepts:**
+  - `__init__`: initializes attributes `real` and `imaginary`
+  - `__add__`: overloads the `+` operator
+  - `__iadd__`: overloads the `+=` operator
+  - `__repr__`: provides a string representation of the object
+
+### `card.py`
+- **Purpose:** Models a single playing card using class attributes and properties.
+- **Key Concepts:**
+  - Class-level attributes: `FACES`, `SUITS`
+  - Instance attributes: `_face`, `_suit`
+  - `@property` decorators to access `face`, `suit`, and `image_name`
+  - `__str__` and `__repr__` methods for readable output
+
+### `deck.py`
+- **Purpose:** Demonstrates **composition**, where one class (`DeckOfCards`) contains multiple instances of another (`Card`).
+- **Key Concepts:**
+  - Creates a list of 52 `Card` objects
+  - `shuffle()` method using `random.shuffle`
+  - `deal_card()` method to remove and return a card
+  - `__str__` method to display the deck
+
+### `Examples.ipynb`
+- **Purpose:** Notebook to **test all three classes** and show visible output.
+- **Demonstrations:**
+  - Creating and adding `Complex` numbers
+  - Creating a single `Card`
+  - Building a `DeckOfCards` and printing the first 5 cards
+- **Output Example:**
+```
+Complex test: (4 + 6i)
+Single card: Ace of Spades
+Deck created with 52 cards
+First 5 cards: [Card(face='Ace', suit='Hearts'), Card(face='2', suit='Hearts'), ...]
+```
+
+---
+
+## 🧠 Key Takeaways
+- Classes encapsulate data (**attributes**) and behavior (**methods**)
+- Operator overloading lets objects use intuitive operations (`+`, `+=`)
+- Composition allows classes to work together to model real-world systems
+- These examples build foundational understanding for using data structures like `pandas.DataFrame` and `pandas.Series`, which are also classes with attributes and methods
+
+---
+
+## 🧪 How to Run
+Activate your virtual environment and run from the project root:
+
+```bash
+# Run all .py files
+python notebooks/examples/ch10/complexnumber.py
+python notebooks/examples/ch10/card.py
+python notebooks/examples/ch10/deck.py
+
+# Or open and run the Examples notebook
+jupyter lab notebooks/examples/ch10/Examples.ipynb
+```
